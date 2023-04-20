@@ -34,6 +34,9 @@ var webpackConfig = {
   mode: process.env.NODE_ENV,
   entry: config.entry,
   context: config.build.context,
+  node: {
+    fs: "empty"
+  },
   resolve: {
     extensions: ["*", ".js", ".jsx"],
     symlinks: false,
@@ -127,6 +130,9 @@ var webpackConfig = {
               plugins: [
                 "@babel/plugin-proposal-class-properties",
                 "@babel/plugin-transform-runtime",
+                "@babel/plugin-proposal-nullish-coalescing-operator",
+                // "@babel/plugin-transform-react-jsx",
+
               ],
             },
           },

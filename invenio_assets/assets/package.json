@@ -64,5 +64,10 @@
   "engines": {
     "node": ">= 18",
     "npm": ">= 8"
-  }
+  },
+  "browserslist": [
+   ">0.2%",
+  "not dead",
+  "not op_mini all"
+]
 }
